@@ -13,8 +13,7 @@ public class BagliListe {
     String tel;
     String adres;
     String urun;
-    MusteriNode next;
-    MusteriNode prev;
+  
       
     void ekle(){
         System.out.println("musterinin bilgilerini giriniz ");
@@ -59,13 +58,13 @@ public class BagliListe {
         else if(head.next!=null && head.id==id){
             head.next=head;
             head.prev=null;
-            System.out.println(id + " numaralı musteri silindi ");
+            System.out.println(id + " numarali musteri silindi ");
             sonuc=true;
         }
         else if(tail.id==id){
             tail.prev=tail;
             tail.next=null;
-            System.out.println(id + " numaralı musteri silindi");
+            System.out.println(id + " numarali musteri silindi");
             sonuc=true;
         }
         else{
@@ -84,7 +83,7 @@ public class BagliListe {
         }
         
         if(!sonuc){
-            System.out.println(id + " silinecek musteri yok");
+            System.out.println(id + " numarali musteri yok");
         }
         }
     
@@ -125,7 +124,7 @@ public class BagliListe {
         }
         
         if(!sonuc){
-            System.out.println(id + " silinecek musteri yok");
+            System.out.println(id + " numarali musteri yok");
         }
         }
     void MusteriAra(){
@@ -143,7 +142,7 @@ public class BagliListe {
             
             while(temp!=null){
                 if(temp.id==id){
-                    System.out.println(id + "numaralı musterinin bilgileri: ");
+                    System.out.println(id + "numarali musterinin bilgileri: ");
                     System.out.println("ad:   "+temp.ad);
                      System.out.println("soyad:   "+temp.soyad);
                     System.out.println("adres:   "+temp.adres);
@@ -159,7 +158,7 @@ public class BagliListe {
         }
         
         if(!sonuc){
-            System.out.println(id + " silinecek musteri yok");
+            System.out.println(id + " numarali musteri yok");
         }
         }
     void yazdir(){
@@ -172,7 +171,7 @@ public class BagliListe {
             MusteriNode temp=head;
             
             while(temp!=null){
-                    System.out.println(id + "numaralı musterinin bilgileri: ");
+                    System.out.println(id + "numarali musterinin bilgileri: ");
                     System.out.println("ad:   "+temp.ad);
                      System.out.println("soyad:   "+temp.soyad);
                     System.out.println("adres:   "+temp.adres);
